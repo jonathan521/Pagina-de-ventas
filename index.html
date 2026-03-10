@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeTime | Relojes y Joyería</title>
+  <meta name="description" content="Página de ventas para relojes y joyería premium: piezas elegantes para cada ocasión, con envío nacional y garantía." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="logo">Luxe<span>Time</span></div>
+      <a class="btn btn-outline" href="#comprar">Comprar ahora</a>
+    </nav>
+
+    <section class="hero-content container">
+      <div>
+        <p class="badge">✨ Nueva colección 2026</p>
+        <h1>Relojes y joyería que elevan tu estilo</h1>
+        <p class="subtitle">
+          Descubre piezas exclusivas en acero, plata y baño de oro.
+          Diseño sofisticado, acabados premium y garantía de calidad.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#comprar">Quiero comprar</a>
+          <a class="btn btn-outline" href="#catalogo">Ver catálogo</a>
+        </div>
+      </div>
+      <div class="card product-card">
+        <h2>Set destacado</h2>
+        <p class="product-name">Reloj Chronos + Pulsera Aurora</p>
+        <p class="price"><span>$229.99</span> $169.99</p>
+        <ul>
+          <li>✅ Cristal mineral anti-rayas</li>
+          <li>✅ Acabado en acero inoxidable</li>
+          <li>✅ Resistencia al agua 5 ATM</li>
+          <li>✅ Garantía de 12 meses</li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="catalogo" class="container benefits">
+      <h2>Categorías más vendidas</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Relojes para dama</h3>
+          <p>Modelos elegantes y minimalistas para uso diario o eventos especiales.</p>
+        </article>
+        <article class="card">
+          <h3>Relojes para caballero</h3>
+          <p>Piezas clásicas y deportivas con materiales duraderos y estilo premium.</p>
+        </article>
+        <article class="card">
+          <h3>Joyería fina</h3>
+          <p>Anillos, cadenas y pulseras con acabados brillantes y diseño atemporal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <blockquote>
+          “Compré un reloj y una cadena para regalo. Llegaron rápido, con excelente presentación y calidad increíble.”
+        </blockquote>
+        <p>— Mariana R., clienta verificada</p>
+      </div>
+    </section>
+
+    <section id="comprar" class="container cta">
+      <h2>Haz tu pedido hoy</h2>
+      <p>Recibe envío gratis en compras superiores a $120 y pago seguro.</p>
+      <form class="card form" onsubmit="event.preventDefault(); document.getElementById('mensaje').textContent='¡Gracias! Tu pedido de relojes/joyería fue recibido.';">
+        <label>
+          Nombre completo
+          <input type="text" required placeholder="Ej. Carlos Pérez" />
+        </label>
+        <label>
+          Correo electrónico
+          <input type="email" required placeholder="ejemplo@correo.com" />
+        </label>
+        <label>
+          Producto de interés
+          <select>
+            <option>Reloj dama</option>
+            <option>Reloj caballero</option>
+            <option>Anillo</option>
+            <option>Cadena</option>
+            <option>Pulsera</option>
+          </select>
+        </label>
+        <button class="btn" type="submit">Finalizar pedido</button>
+        <p id="mensaje" class="mensaje" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 LuxeTime. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
